@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+
+    link(rel="icon" href="/favicon.ico")
+    link(rel="stylesheet" href="/styles.css")
+
+  body(class=theme)
+    .container
+      h1 Users List
+
+      .theme-switch
+        a.btn(href="/set-theme/light") Light
+        a.btn(href="/set-theme/dark") Dark
+
+      ul
+        each user in users
+          li
+            a(href=`/users/${user.id}`) #{user.name} — #{user.email}
