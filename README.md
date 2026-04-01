@@ -28,11 +28,11 @@ npm start
 - GET /users
 - GET /users/:userId
 ## Articles (EJS)
--GET /articles
--GET /articles/:articleId
--Auth (JWT)
--POST /auth/register
--POST /auth/login
+- GET /articles
+- GET /articles/:articleId
+- Auth (JWT)
+- POST /auth/register
+- POST /auth/login
 ## Додатково
 - використовується cookies для збереження теми
 - JWT зберігається у cookies (httpOnly)
